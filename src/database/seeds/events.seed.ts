@@ -8,7 +8,7 @@ export default class CreateUsers implements Seeder {
       {
         eventTitle: "첫 이용시 50% 할인",
         startDate: "202004010000",
-        endDate: null,
+        endDate: "",
         detailPageUrl: `/event1`,
         buttonImage:
           "https://dogmate-image.s3.ap-northeast-2.amazonaws.com/1586004507026.png",
@@ -21,7 +21,7 @@ export default class CreateUsers implements Seeder {
       {
         eventTitle: "프레이저 플레이스 객실 패키지 10% 할인",
         startDate: "202004010000",
-        endDate: null,
+        endDate: "",
         detailPageUrl: `/event2`,
         buttonImage:
           "https://dogmate-image.s3.ap-northeast-2.amazonaws.com/1586004580070.png",
@@ -60,7 +60,7 @@ export default class CreateUsers implements Seeder {
       {
         eventTitle: "해외에서 데이터 고플땐? 와이파이 도시락 10% 할인!",
         startDate: "202005010000",
-        endDate: null,
+        endDate: "",
         detailPageUrl: `/event5`,
         buttonImage:
           "https://dogmate-image.s3.ap-northeast-2.amazonaws.com/1586095153842.png",

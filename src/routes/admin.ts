@@ -35,8 +35,8 @@ const upload = multer({
       cb(null, Date.now().toString() + extension);
     },
     acl: "public-read-write",
-    limits: { fileSize: 5 * 1024 * 1024 }
-  })
+    limits: { fileSize: 5 * 1024 * 1024 },
+  }),
 });
 
 const option = [
@@ -47,7 +47,7 @@ const option = [
   { name: "bannerImage", maxCount: 5 },
   { name: "buttonImage", maxCount: 5 },
   { name: "detailPageUrl", maxCount: 5 },
-  { name: "couponCode", maxCount: 5 }
+  { name: "couponCode", maxCount: 5 },
 ];
 
 router.get("/adminId", jwtCheck, controller.getAdminIdController);

@@ -6,25 +6,10 @@ export default class CreateUsers implements Seeder {
   public async run(factory: Factory, connection: Connection): Promise<any> {
     const chatData = [
       {
-        content: "안녕하세요! 무엇을 도와드릴까요?",
-        roomId: 1,
-        writer: "admin",
-      },
-      {
         content:
           "첫 이용시 50% 할인쿠폰 유효기간이 만료되었는데 다시 발급받을 수 없을까요?ㅠㅠ",
         roomId: 1,
         writer: "user",
-      },
-      {
-        content: "안녕하세요! 무엇을 도와드릴까요?",
-        roomId: 2,
-        writer: "admin",
-      },
-      {
-        content: "안녕하세요! 무엇을 도와드릴까요?",
-        roomId: 3,
-        writer: "admin",
       },
       {
         content:

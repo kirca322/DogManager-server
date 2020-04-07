@@ -13,7 +13,7 @@ module.exports = [
     logging: false,
     synchronize: true,
     seeds: ["src/database/seeds/**/*.seed.ts"],
-    factories: ["src/database/factories/**/*.factory.ts"]
+    factories: ["src/database/factories/**/*.factory.ts"],
   },
   {
     name: "test",
@@ -26,7 +26,7 @@ module.exports = [
     entities: ["src/database/entity/*.ts"],
     logging: false,
     synchronize: true,
-    dropSchema: true
+    dropSchema: true,
   },
   {
     name: "production",
@@ -36,8 +36,8 @@ module.exports = [
     username: process.env.DB_PRODUCTION_USERNAME,
     password: process.env.DB_PRODUCTION_PASSWORD,
     database: process.env.DB_PRODUCTION_DATABASE,
-    entities: ["dist/database/entity/*.js"],
+    entities: ["src/database/entity/*.ts"],
     logging: false,
-    synchronize: true
-  }
+    synchronize: true,
+  },
 ];

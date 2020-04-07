@@ -20,10 +20,10 @@ app.use(
     origin: [
       "http://dogandcodemate.s3-website.ap-northeast-2.amazonaws.com",
       "http://localhost:3000",
-      "http://shortly-client.s3-website.ap-northeast-2.amazonaws.com"
+      "http://shortly-client.s3-website.ap-northeast-2.amazonaws.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
+    credentials: true,
   })
 );
 
